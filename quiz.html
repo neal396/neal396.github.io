@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frage 1</title>
+    <title>Quiz</title>
     <style>
         body {
             background-color: #fce4ec; /* Hellrosa Hintergrund */
@@ -19,38 +19,37 @@
             color: #ff69b4; /* Pinkfarbene Überschrift */
             text-decoration: underline; /* Unterstrich hinzufügen */
         }
-        .answer-button {
+        p {
+            font-size: 16px; /* Schriftgröße für den Text */
+            line-height: 1.6; /* Zeilenhöhe für bessere Lesbarkeit */
+            margin: 5px 0; /* Kleinerer Abstand zwischen den Absätzen */
+            padding: 0; /* Kein Padding für die Absätze */
+            color: #ff69b4; /* Pinkfarbener Text */
+        }
+        .quiz-link {
             display: inline-block;
-            padding: 10px 20px; /* Kleineres Padding */
+            padding: 15px 30px; /* Kleinere Abmessungen */
             border: 4px solid #ff69b4; /* Dickerer, pinker Rand */
             border-radius: 0; /* Ganz eckig */
             color: #ff69b4; /* Pink */
             background-color: #fff; /* Weißer Hintergrund */
             text-decoration: none;
-            font-size: 16px; /* Kleinerer Text */
+            font-size: 24px; /* Kleinerer Text */
             transition: all 0.3s ease;
-            margin: 10px;
+            margin-top: 20px; /* Abstand nach oben hinzufügen */
         }
-        .answer-button:hover {
+        .quiz-link:hover {
             background-color: #ff69b4; /* Pink */
             color: white;
-        }
-
-        @media screen and (max-width: 600px) {
-            .answer-button {
-                padding: 8px 12px; /* Kleinere Padding für kleine Bildschirme */
-            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Wo wurde ich geboren?</h1>
-        <a href="#" class="answer-button">Antwort 1</a>
-        <a href="#" class="answer-button">Antwort 2</a>
-        <br>
-        <a href="#" class="answer-button">Antwort 3</a>
-        <a href="#" class="answer-button">Antwort 4</a>
+        <h1>Quiz</h1>
+        <p>Das Quiz hat immer vier Antwortmöglichkeiten und es gibt insgesamt 10 Fragen.</p>
+        <p>Viel Spaß dir <3</p>
+        <a href="frage1.html" class="quiz-link">Click me</a>
     </div>
 </body>
 </html>
