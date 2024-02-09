@@ -14,6 +14,7 @@
         }
         .container {
             padding: 20px; /* Padding für den Inhalt */
+            position: relative; /* Position relativ für absolute Positionierung des Fragezählers */
         }
         h1 {
             color: #ff69b4; /* Pinkfarbene Überschrift */
@@ -43,9 +44,9 @@
         }
 
         .question-counter {
-            position: fixed;
+            position: absolute; /* Absolute Positionierung */
             bottom: 10px; /* Abstand vom unteren Rand */
-            right: 10px; /* Abstand vom rechten Rand */
+            right: 20px; /* Abstand vom rechten Rand */
             font-style: italic; /* Kursiver Text */
             color: #3498db; /* Blaue Farbe */
         }
@@ -59,7 +60,7 @@
         <br>
         <a href="#" class="answer-button">Antwort 3</a>
         <a href="#" class="answer-button">Antwort 4</a>
+        <div class="question-counter">Frage 1/10</div>
     </div>
-    <div class="question-counter">Frage 1/10</div>
 </body>
 </html>
