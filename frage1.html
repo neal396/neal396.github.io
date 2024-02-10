@@ -29,7 +29,7 @@
             color: #ff69b4; /* Pink */
             background-color: #fff; /* Weißer Hintergrund */
             text-decoration: none;
-            font-size: 16px; /* Kleinerer Text */
+            font-size: 18px; /* Kleinerer Text */
             transition: all 0.3s ease;
             margin: 10px;
         }
@@ -47,8 +47,9 @@
         }
 
         .question-counter {
-            position: relative; /* Relative Positionierung */
-            top: 20px; /* Abstand nach unten */
+            position: absolute; /* Absolute Positionierung */
+            top: 20px; /* Abstand von oben */
+            right: calc(50% - 80px); /* Abstand von rechts (entsprechend der Button-Breite und des Abstands) */
             font-style: italic; /* Kursiver Text */
             color: #3498db; /* Blaue Farbe */
         }
