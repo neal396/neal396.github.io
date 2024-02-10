@@ -14,14 +14,15 @@
         }
         .container {
             padding: 20px; /* Padding für den Inhalt */
-            position: relative; /* Position relativ für absolute Positionierung des Fragezählers */
+            display: flex; /* Flexbox */
+            flex-direction: column; /* Vertikale Anordnung */
+            align-items: center; /* Zentrieren horizontal */
         }
         h1 {
             color: #ff69b4; /* Pinkfarbene Überschrift */
             text-decoration: underline; /* Unterstrich hinzufügen */
         }
         .answer-button {
-            display: inline-block;
             width: 45%; /* Breite für 2x2 Anordnung */
             padding: 15px 0; /* Größeres Padding für gleichmäßige Größe */
             border: 4px solid #ff69b4; /* Dickerer, pinker Rand */
@@ -29,7 +30,7 @@
             color: #ff69b4; /* Pink */
             background-color: #fff; /* Weißer Hintergrund */
             text-decoration: none;
-            font-size: 18px; /* Kleinerer Text */
+            font-size: 16px; /* Kleinerer Text */
             transition: all 0.3s ease;
             margin: 10px;
         }
@@ -41,16 +42,14 @@
         @media screen and (max-width: 600px) {
             .answer-button {
                 width: 90%; /* Breite für kleine Bildschirme */
-                display: block; /* Ändert die Anzeige auf Block, um die 2x2 Anordnung zu erreichen */
-                margin: 10px auto; /* Zentriert die Buttons */
             }
         }
 
         .question-counter {
-            position: relative; /* Relative Positionierung */
-            top: 20px; /* Abstand nach unten */
+            margin-top: 20px; /* Abstand nach oben */
             font-style: italic; /* Kursiver Text */
             color: #3498db; /* Blaue Farbe */
+            align-self: flex-end; /* Am rechten Rand ausrichten */
         }
     </style>
 </head>
