@@ -7,14 +7,22 @@
     <title>Richtig!</title>
     <style>
         body {
+            background-color: #fce4ec; /* Hellrosa Hintergrund */
             font-family: 'Arial', sans-serif;
             text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             margin: 0;
-            background-color: #fce4ec; /* Hellrosa Hintergrund */
+            padding: 0;
+        }
+        .container {
+            padding: 20px; /* Padding für den Inhalt */
+            display: flex; /* Flexbox */
+            flex-direction: column; /* Vertikale Anordnung */
+            align-items: center; /* Zentrieren horizontal */
+            height: 100vh;
+        }
+        h1 {
+            color: #ff69b4; /* Pinkfarbene Überschrift */
+            text-decoration: underline; /* Unterstrich hinzufügen */
         }
         .button {
             display: inline-block;
@@ -27,6 +35,7 @@
             font-size: 36px; /* Größerer Text */
             transition: all 0.3s ease;
             cursor: pointer;
+            margin-top: 20px;
         }
         .button:hover {
             background-color: #ff69b4; /* Pink */
@@ -35,8 +44,10 @@
     </style>
 </head>
 <body>
-    <h1>Richtig!</h1>
-    <p>Die Antwort ist korrekt.</p>
-    <button class="button" onclick="window.location.href = 'weiterleitung_zur_naechsten_frage.html'">Nächste Frage</button>
+    <div class="container">
+        <h1>Richtig!</h1>
+        <p>Die Antwort ist korrekt.</p>
+        <button class="button" onclick="window.location.href = 'weiterleitung_zur_naechsten_frage.html'">Nächste Frage</button>
+    </div>
 </body>
 </html>
