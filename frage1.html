@@ -15,14 +15,16 @@
         .container {
             padding: 20px; /* Padding für den Inhalt */
             position: relative; /* Position relativ für absolute Positionierung des Fragezählers */
+            display: grid; /* Verwende CSS Grid für Layout */
+            grid-template-columns: repeat(2, 1fr); /* Zwei Spalten mit gleicher Breite */
+            gap: 10px; /* Abstand zwischen den Elementen */
         }
         h1 {
             color: #ff69b4; /* Pinkfarbene Überschrift */
             text-decoration: underline; /* Unterstrich hinzufügen */
         }
         .answer-button {
-            display: inline-block;
-            width: 45%; /* Breite für 2x2 Anordnung */
+            width: 100%; /* 100% Breite für jede Button-Zelle */
             padding: 15px 0; /* Größeres Padding für gleichmäßige Größe */
             border: 4px solid #ff69b4; /* Dickerer, pinker Rand */
             border-radius: 0; /* Ganz eckig */
@@ -31,7 +33,6 @@
             text-decoration: none;
             font-size: 16px; /* Kleinerer Text */
             transition: all 0.3s ease;
-            margin: 10px;
         }
         .answer-button:hover {
             background-color: #ff69b4; /* Pink */
@@ -39,10 +40,8 @@
         }
 
         @media screen and (max-width: 600px) {
-            .answer-button {
-                width: 90%; /* Breite für kleine Bildschirme */
-                display: block; /* Ändert die Anzeige auf Block, um die 2x2 Anordnung zu erreichen */
-                margin: 10px auto; /* Zentriert die Buttons */
+            .container {
+                grid-template-columns: 1fr; /* Eine Spalte für kleinere Bildschirme */
             }
         }
 
