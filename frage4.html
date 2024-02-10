@@ -21,6 +21,8 @@
         h1 {
             color: #ff69b4; /* Pinkfarbene Überschrift */
             text-decoration: underline; /* Unterstrich hinzufügen */
+            font-size: 24px; /* Schriftgröße verkleinern */
+            margin-bottom: 10px; /* Unteren Abstand verkleinern */
         }
         .answer-button {
             width: 45%; /* Breite für 2x2 Anordnung */
@@ -38,10 +40,20 @@
             background-color: #ff69b4; /* Pink */
             color: white;
         }
+        img {
+            width: 80%; /* Bildbreite auf 80% des Bildschirms */
+            border: 4px solid #ff69b4; /* Pinker Rahmen */
+            border-radius: 0; /* Ganz eckig */
+            margin-top: 20px; /* Oberen Abstand hinzufügen */
+            margin-bottom: 20px; /* Unteren Abstand hinzufügen */
+        }
 
         @media screen and (max-width: 600px) {
             .answer-button {
                 width: 90%; /* Breite für kleine Bildschirme */
+            }
+            img {
+                width: 90%; /* Bildbreite auf 90% des Bildschirms für kleine Bildschirme */
             }
         }
 
@@ -56,7 +68,7 @@
 <body>
     <div class="container">
         <h1>Welche Gleichung passt zum abgebildeten Graphen?</h1>
-        <img src="Graph.jpg" alt="Graph" width="400">
+        <img src="Graph.jpg" alt="Graph">
         <a href="falsch.html" class="answer-button">x^2</a>
         <a href="falsch.html" class="answer-button">x</a>
         <a href="falsch.html" class="answer-button">x = 0</a>
