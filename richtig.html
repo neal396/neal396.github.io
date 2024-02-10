@@ -3,13 +3,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="5;url=weiterleitung_zur_naechsten_frage.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Richtig!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #fce4ec; /* Hellrosa Hintergrund */
+        }
+        .button {
+            display: inline-block;
+            padding: 20px 40px;
+            border: 4px solid #ff69b4; /* Dickerer, pinker Rand */
+            border-radius: 0; /* Ganz eckig */
+            color: #ff69b4; /* Pink */
+            background-color: #fff; /* Weißer Hintergrund */
+            text-decoration: none;
+            font-size: 36px; /* Größerer Text */
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #ff69b4; /* Pink */
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <h1>Richtig!</h1>
     <p>Die Antwort ist korrekt.</p>
-    <p>Du wirst in Kürze zur nächsten Frage weitergeleitet.</p>
-    <!-- Optional: Fügen Sie hier weitere Inhalte hinzu -->
+    <button class="button" onclick="window.location.href = 'weiterleitung_zur_naechsten_frage.html'">Nächste Frage</button>
 </body>
 </html>
