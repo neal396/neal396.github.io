@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frage 2</title>
+    <style>
+        body {
+            background-color: #fce4ec; /* Hellrosa Hintergrund */
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding: 20px; /* Padding für den Inhalt */
+            display: flex; /* Flexbox */
+            flex-direction: column; /* Vertikale Anordnung */
+            align-items: center; /* Zentrieren horizontal */
+        }
+        h1 {
+            color: #ff69b4; /* Pinkfarbene Überschrift */
+            text-decoration: underline; /* Unterstrich hinzufügen */
+        }
+        .answer-button {
+            width: 45%; /* Breite für 2x2 Anordnung */
+            padding: 15px 0; /* Größeres Padding für gleichmäßige Größe */
+            border: 4px solid #ff69b4; /* Dickerer, pinker Rand */
+            border-radius: 0; /* Ganz eckig */
+            color: #ff69b4; /* Pink */
+            background-color: #fff; /* Weißer Hintergrund */
+            text-decoration: none;
+            font-size: 18px; /* Kleinerer Text */
+            transition: all 0.3s ease;
+            margin: 10px;
+        }
+        .answer-button:hover {
+            background-color: #ff69b4; /* Pink */
+            color: white;
+        }
+
+        @media screen and (max-width: 600px) {
+            .answer-button {
+                width: 90%; /* Breite für kleine Bildschirme */
+            }
+        }
+
+        .question-counter {
+            margin-top: 20px; /* Abstand nach oben */
+            font-style: italic; /* Kursiver Text */
+            color: #3498db; /* Blaue Farbe */
+            align-self: flex-end; /* Am rechten Rand ausrichten */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Wo mag ich es mehr?</h1>
+        <a href="#" class="answer-button">In der Stadt</a>
+        <a href="#" class="answer-button">Auf dem Dorf</a>
+        <a href="#" class="answer-button">Auf der Straße</a>
+        <a href="#" class="answer-button">Egal, Hauptsache bei dir</a>
+        <div class="question-counter">Frage 2/10</div>
+    </div>
+</body>
+</html>
