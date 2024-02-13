@@ -15,19 +15,31 @@
         h1 {
             color: #ff69b4; /* Pinkfarbene Überschrift */
             font-size: 24px; /* Schriftgröße vergrößern */
+            margin-bottom: 10px; /* Unteren Abstand verkleinern */
+        }
+        .additional-text {
+            font-size: 16px; /* Schriftgröße für den zusätzlichen Text */
+            color: #3498db; /* Blaue Farbe */
             margin-bottom: 20px; /* Unteren Abstand vergrößern */
         }
-        video {
-            width: 80%; /* Breite des Videos anpassen */
-            max-width: 800px; /* Maximale Breite festlegen */
+        .download-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff69b4; /* Pink */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin-bottom: 10px; /* Abstand zum folgenden Text */
+        }
+        .download-link:hover {
+            background-color: #e84393; /* Helligkeit bei Hover ändern */
         }
     </style>
 </head>
 <body>
     <h1>Danke Lady Lyn Seminilla Glauser Malon für alles ...</h1>
-    <video controls>
-        <source src="video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <p class="additional-text">Hab dich vom ganzen Herzen lieb ❤️</p>
+    <a href="CLOUD_STORAGE_LINK" class="download-link" download>Video herunterladen</a>
 </body>
 </html>
