@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richtig!</title>
+    <style>
+        body {
+            background-color: #fce4ec; /* Hellrosa Hintergrund */
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding: 20px; /* Padding für den Inhalt */
+            display: flex; /* Flexbox */
+            flex-direction: column; /* Vertikale Anordnung */
+            align-items: center; /* Zentrieren horizontal */
+            height: 100vh;
+        }
+        h1 {
+            color: #ff69b4; /* Pinkfarbene Überschrift */
+            text-decoration: underline; /* Unterstrich hinzufügen */
+        }
+        p {
+            color: #3498db; /* Blaue Farbe */
+            font-style: italic; /* Kursiver Text */
+        }
+        .button {
+            display: inline-block;
+            padding: 20px 40px;
+            border: 4px solid #ff69b4; /* Dickerer, pinker Rand */
+            border-radius: 0; /* Ganz eckig */
+            color: #ff69b4; /* Pink */
+            background-color: #fff; /* Weißer Hintergrund */
+            text-decoration: none;
+            font-size: 36px; /* Größerer Text */
+            transition: all 0.3s ease;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #ff69b4; /* Pink */
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Richtig!</h1>
+        <p>Du bist gut in Allgemeinwissen, mag ich ;)</p>
+        <button class="button" onclick="window.location.href = 'frage10.html'">Click me</button>
+    </div>
+</body>
+</html>
